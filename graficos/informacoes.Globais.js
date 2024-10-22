@@ -1,20 +1,14 @@
-const url='https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-dados-gerais.json'
-
+const url='https://raw.githubusercontent.com/guilhermeonrails/api/main/dados-globais.json'
 
 async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
     const dados = await res.json()
     console.log(dados)
+    const paragrafo = document.createElement('p')
+    paragrafo.classList.add('graficos-container__texto')
+    paragrafo.innerHTML = `Você sabia que o mundo tem ${dados.total_pessoas_mundo} de pessoas e que aproximadamente ${dados.total_pessoas_conectadas} estão conectadas em alguma rede social e passam em média ${dados.tempo_medio} horas conectadas.`
+    const container = document.getElementById('graficos-container')
+    container.appendChild(paragrafo);
 }
+
 vizualizarInformacoesGlobais()
-
-const nome = "Lucas";
-const idade = 16;
-const mensagem = `Oi, eu sou <b>${nome}</b> e tenho <b>${idade}</b> anos.`;
-
-const paragrafo = document.createElement("p");
-paragrafo.innerHTML = mensagem;
-const section = document.getElementById("principal");
-section.appendChild(paragrafo);
-// console.log(mensagem);
-paragrafo.classList.add("texto-formatado");
