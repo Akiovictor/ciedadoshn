@@ -1,6 +1,6 @@
 const url='https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/transporte/transporte-dados-globais.json'
 
-async function vizualizarInformacoesGlobais() {
+async function vizualizarInformacoes() {
     const res = await fetch(url)
     const dados = await res.json()
     console.log(dados)
@@ -11,4 +11,4 @@ async function vizualizarInformacoesGlobais() {
     container.appendChild(paragrafo)
 }
 
-vizualizarInformacoesGlobais()
+vizualizarInformacoes()
