@@ -5,7 +5,7 @@
   --primary-color: #ECB176;
   --secundary-color: #FED8B1;
   --font: Grandstander;
-
+}
   body {
     background-color: var(--bg-color);
     color: var(--primary-color);
