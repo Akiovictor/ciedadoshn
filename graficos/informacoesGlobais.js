@@ -12,9 +12,9 @@ async function vizualizarInformacoesGlobais() {
     const horas = parseInt(dados.tempo_medio_deslocamento_para_trabalho)
     const minutos = Math.round((dados.tempo_medio_deslocamento_para_trabalho - horas) * 60)
 
-    const PorcentagemDeTrabalhadores = ((PessoasQueTrabalham / PessoasNoMundo ) * 100).toFixed(2)
-    const PorcentagemTransporteDoMundo = ((PessoasNecessitamTransporte / PessoasNoMundo ) * 100).toFixed(2)
-    const PorcentagemTansporteDosTrabalham = ((PessoasNecessitamTransporte / PessoasQueTrabalham ) * 100).toFixed(2)
+    const PorcentagemDeTrabalhadores = ((PessoasQueTrabalham / PessoasNoMundo ) * 100).toFixed(0)
+    const PorcentagemTransporteDoMundo = ((PessoasNecessitamTransporte / PessoasNoMundo ) * 100).toFixed(0)
+    const PorcentagemTansporteDosTrabalham = ((PessoasNecessitamTransporte / PessoasQueTrabalham ) * 100).toFixed(0)
 
 
     console.log(dados)
