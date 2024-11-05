@@ -14,7 +14,7 @@ async function vizualizarInformacoesGlobais() {
 
     const PorcentagemDeTrabalhadores = ((PessoasQueTrabalham / PessoasNoMundo ) * 100).toFixed(2)
     const PorcentagemTransporteDoMundo = ((PessoasNecessitamTransporte / PessoasNoMundo ) * 100).toFixed(2)
-    const PorcentagemTansporteDosTrabalham = ((PessoasNecessitamTransporte / PessoasNoMundo ) * 100).toFixed(2)
+    const PorcentagemTansporteDosTrabalham = ((PessoasNecessitamTransporte / PessoasQueTrabalham ) * 100).toFixed(2)
 
 
     console.log(dados)
